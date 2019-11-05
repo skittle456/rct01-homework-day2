@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-
-const posterUrlPrefix = 'https://image.tmdb.org/t/p/w780/';
+import React, { Component } from "react";
 
 class FilmPoster extends Component {
   render() {
-    return <img src={posterUrlPrefix + this.props.posterPath} alt="" />
+    const posterUrlPrefix = "https://image.tmdb.org/t/p/w780/";
+
+    return <img src={posterUrlPrefix + this.props.poster_path} alt="" />;
   }
 }
 
